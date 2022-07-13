@@ -16,6 +16,10 @@ const ExerciseDetail = () => {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
     const fetchExercisesData = async () => {
       const exerciseDbUrl = "https://exercisedb.p.rapidapi.com";
@@ -48,6 +52,7 @@ const ExerciseDetail = () => {
     };
 
     fetchExercisesData();
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [id]);
 
   if (!exerciseDetail) return <div>No Data</div>;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Button, Stack, Typography } from "@mui/material";
 
-import HeroBannerImage from "../assets/images/banner.png";
+import HeroBannerImage from "../assets/images/Hampton.png";
 
 const HeroBanner = () => (
   <Box
@@ -10,7 +10,7 @@ const HeroBanner = () => (
     p="20px"
   >
     <Typography color="#FF2625" fontWeight="600" fontSize="26px">
-      Fitness Club
+      Turnik and brusya
     </Typography>
     <Typography
       fontWeight={700}
@@ -25,11 +25,19 @@ const HeroBanner = () => (
       fontSize="22px"
       fontFamily="Alegreya"
       lineHeight="35px"
-      mb="3px"
+      mb="30px"
     >
-      Check out the most effective exercises personalized to you
+      Easy to start <br />
+      Easy to follow
     </Typography>
-    <Button variant="contained" color="error" href="#exercises">
+    <Button
+      variant="contained"
+      color="error"
+      href="#exercises"
+      // sx={{ fontSize: { lg: "44px", xs: "40px" } }}
+      mb="23px"
+      mt="100px"
+    >
       Explore Exercises
     </Button>
     <Typography
@@ -43,7 +51,15 @@ const HeroBanner = () => (
     >
       Exercise
     </Typography>
-    <img src={HeroBannerImage} alt="hero-banner" className="hero-banner-img" />
+    <img
+      src={HeroBannerImage}
+      alt="hero-banner"
+      className="hero-banner-img"
+      // overflow:hidden
+      // object-fit:cover
+      // class="cover"
+      style={{ width: "750px", height: "850px" }}
+    />
   </Box>
 );
 
